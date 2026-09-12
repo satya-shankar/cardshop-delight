@@ -66,6 +66,7 @@ export const CARDS: TopUpCard[] = [
 ];
 
 export const PAYMENT = {
-  binanceId: "REPLACE_BINANCE_ID",
-  upiId: "REPLACE@UPI",
+  binanceId: "1214184773",
+  upiId: "paytm.s2xzjm7@pty",
 };
+
