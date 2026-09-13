@@ -5,13 +5,13 @@ import { createAccount, login } from "@/lib/store";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CardBuy — Create Account or Sign In to Buy Top Up Cards" },
+      { title: "usCard — Create Account or Sign In to Buy Top Up Cards" },
       {
         name: "description",
         content:
-          "Create your CardBuy account first, then sign in to buy Free Fire, BGMI and other game top up cards for $5 or $10.",
+          "Create your usCard account first, then sign in to buy Free Fire, BGMI and other game top up cards for $5 or $10.",
       },
-      { property: "og:title", content: "CardBuy — Secure Account Access" },
+      { property: "og:title", content: "usCard — Secure Account Access" },
       {
         property: "og:description",
         content: "Create an account and buy game top up cards from $5 to $10 with Binance or UPI.",
@@ -72,7 +72,7 @@ function AuthPage() {
   return (
     <div className="min-h-screen">
       <div className="fixed left-[5%] top-7 text-2xl font-extrabold tracking-tight">
-        Card<span className="text-primary">Buy</span>
+        us<span className="text-primary">Card</span>
       </div>
 
       <main className="mx-auto grid min-h-screen w-[92%] max-w-[1050px] items-center gap-16 py-28 md:grid-cols-2">
