@@ -5,16 +5,16 @@ import { getOrders, getSession, PENDING_MS, type Order } from "@/lib/store";
 export const Route = createFileRoute("/orders")({
   head: () => ({
     meta: [
-      { title: "My Orders — Track Top Up Card Payment Status | CardBuy" },
+      { title: "My Orders — Track Top Up Card Payment Status | usCard" },
       {
         name: "description",
         content:
-          "Track your CardBuy top up card orders: pending verification, approved deliveries and payment references for Binance and UPI.",
+          "Track your usCard top up card orders: pending verification, approved deliveries and payment references for Binance and UPI.",
       },
-      { property: "og:title", content: "My Orders — CardBuy" },
+      { property: "og:title", content: "My Orders — usCard" },
       {
         property: "og:description",
-        content: "Track pending and approved top up card orders on CardBuy.",
+        content: "Track pending and approved top up card orders on usCard.",
       },
     ],
   }),
@@ -48,7 +48,7 @@ function OrdersPage() {
     <div className="min-h-screen pb-24">
       <header className="mx-auto flex w-[92%] max-w-[900px] items-center justify-between py-8">
         <Link to="/cards" className="text-2xl font-extrabold tracking-tight">
-          Card<span className="text-primary">Buy</span>
+          us<span className="text-primary">Card</span>
         </Link>
         <Link to="/cards" className="text-sm text-primary hover:underline">
           Buy more cards

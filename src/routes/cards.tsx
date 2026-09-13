@@ -6,13 +6,13 @@ import { addOrder, getSession, inr, signOut } from "@/lib/store";
 export const Route = createFileRoute("/cards")({
   head: () => ({
     meta: [
-      { title: "Game Top Up Cards — Free Fire, BGMI and More on CardBuy" },
+      { title: "Game Top Up Cards — Free Fire, BGMI and More on usCard" },
       {
         name: "description",
         content:
           "Buy Free Fire, BGMI, PUBG and Valorant top up cards for $5 or $10 with Binance or UPI payment and fast manual verification.",
       },
-      { property: "og:title", content: "Game Top Up Cards on CardBuy" },
+      { property: "og:title", content: "Game Top Up Cards on usCard" },
       {
         property: "og:description",
         content: "Free Fire, BGMI and more top up cards at fixed $5 and $10 prices.",
@@ -42,7 +42,7 @@ function CardsPage() {
     <div className="min-h-screen pb-24">
       <header className="mx-auto flex w-[92%] max-w-[1100px] flex-wrap items-center justify-between gap-4 py-8">
         <Link to="/cards" className="text-2xl font-extrabold tracking-tight">
-          Card<span className="text-primary">Buy</span>
+          us<span className="text-primary">Card</span>
         </Link>
         <div className="flex items-center gap-5 text-sm">
           <span className="hidden text-muted-foreground sm:inline">{email}</span>

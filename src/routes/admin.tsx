@@ -7,13 +7,13 @@ import { adminLogin } from "@/lib/admin.functions";
 export const Route = createFileRoute("/admin")({
   head: () => ({
     meta: [
-      { title: "Admin Verification — Approve Top Up Card Payments | CardBuy" },
+      { title: "Admin Verification — Approve Top Up Card Payments | usCard" },
       {
         name: "description",
         content:
-          "Admin panel to review pending Binance and UPI payments and approve or reject top up card orders on CardBuy.",
+          "Admin panel to review pending Binance and UPI payments and approve or reject top up card orders on usCard.",
       },
-      { property: "og:title", content: "Admin Verification — CardBuy" },
+      { property: "og:title", content: "Admin Verification — usCard" },
       {
         property: "og:description",
         content: "Approve or reject pending top up card payments.",
@@ -77,7 +77,7 @@ function AdminLogin({ onUnlock }: { onUnlock: () => void }) {
     <div className="grid min-h-screen place-items-center px-4">
       <form onSubmit={submit} className="glass-card w-full max-w-sm rounded-3xl p-8">
         <h1 className="text-2xl font-bold">
-          Card<span className="text-primary">Buy</span> Admin
+          us<span className="text-primary">Card</span> Admin
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
           Sign in with your admin username and password.
@@ -131,7 +131,7 @@ function AdminPage({ onLock }: { onLock: () => void }) {
     <div className="min-h-screen pb-24">
       <header className="mx-auto flex w-[92%] max-w-[900px] items-center justify-between py-8">
         <Link to="/cards" className="text-2xl font-extrabold tracking-tight">
-          Card<span className="text-primary">Buy</span> <span className="text-sm">Admin</span>
+          us<span className="text-primary">Card</span> <span className="text-sm">Admin</span>
         </Link>
         <div className="flex gap-4 text-sm">
           <button onClick={refresh} className="text-primary hover:underline">
